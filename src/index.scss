@@ -1,15 +1,16 @@
 @font-face {
   font-family: 'MyFont';
-  src:  url('assets/fonts/acooperblack.woff') format('woff');
-  font-weight: 600;
   font-style: normal;
+  font-weight: 600;
+  src: url('assets/fonts/acooperblack.woff') format('woff');
 }
 
 html,
 body {
+  background: $color;
   margin: 0;
   padding: 0;
-  background: $color;}
-h2{color: #000; font-family: 'MyFont';}
+}
+h2 { color: #000; font-family: 'MyFont';}
 
-#app{width: 200px; height: 100px;  color: #000; font-family: 'MyFont'}
+#app { color: #000; font-family: 'MyFont'; height: 100px;width: 200px;}

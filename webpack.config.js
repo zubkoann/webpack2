@@ -23,10 +23,10 @@ module.exports = {
         loader: isProduction ? MiniCssExtractPlugin.loader : 'style-loader',
       }, {
         loader: 'css-loader',
-        options: {sourceMap: !isProduction},
+        options: { sourceMap: !isProduction },
       }, {
         loader: 'sass-loader',
-        options: {sourceMap: !isProduction},
+        options: { sourceMap: !isProduction },
       }, {
         loader: 'sass-resources-loader',
         options: {
