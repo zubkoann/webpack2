@@ -1,0 +1,29 @@
+.accordion__ {
+  &block {
+    width: 500px;
+    margin: 10px 0;
+    border: 1px solid #372ee3;
+  }
+  &content {
+    padding: 10px 20px;
+    padding: 10px 20px;
+    background-color: #5bde2c;
+    cursor: pointer;
+    font-size: 20px
+  }
+  &addition {
+    max-height: 0;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 18px;
+    transition: max-height .5s ease-out;
+         &-text{
+           display: inline-block;
+           padding: 10px 20px;
+           }
+         &.active {
+           max-height: 500px;
+           }
+    }
+  }
+

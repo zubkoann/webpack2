@@ -1,8 +1,17 @@
 .Popover {
   background-color: $colorPrimary;
-  border: none;
   color: $colorWhite;
   font-family: $fontPrimary;
   font-size: 1rem;
   padding: 0.5rem 2rem;
+  &-title{
+    border: solid 1px blue;
+    padding: 1rem;
+  }
+  &-content{
+    display: none;
+  }
+  &.isOpen &-content{
+    display: block;
+  }
 }

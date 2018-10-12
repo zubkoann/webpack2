@@ -1,8 +1,12 @@
-Button {
+.Button {
   background-color: $colorPrimary;
   border: none;
   color: $colorWhite;
   font-family: $fontPrimary;
   font-size: 1rem;
   padding: 0.5rem 2rem;
+
+  &--blue {
+    background-color: $colorBlue;
+  }
 }

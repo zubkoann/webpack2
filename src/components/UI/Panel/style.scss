@@ -1,0 +1,17 @@
+.Panel {
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    background: #dd2de3;
+  }
+  &-content{
+    height: 0;
+    overflow: hidden;
+  }
+  &.isOpen &-content{
+    height: auto;
+  }
+}
+.Panel-title{
+  padding: 20px;
+}

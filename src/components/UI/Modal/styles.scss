@@ -1,0 +1,47 @@
+.modal_ {
+  &background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    //position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, .5);
+  }
+  &dialog {
+    width: 300px;
+    background-color: #ffff;
+    padding: 10px;
+  }
+  &header {
+    display: flex;
+    justify-content: space-between;
+  }
+  &title {
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  & btn-close {
+    position: absolute;
+    right: 0;
+    top: -10px;
+    font-size: 30px;
+    color: gray;
+    cursor: pointer;
+  }
+  &body {
+    padding: 15px 0;
+  }
+  &footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+  .modal__btn-no {
+      margin-left: 15px;
+    }

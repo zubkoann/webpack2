@@ -1,6 +1,7 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -68,10 +69,13 @@ module.exports = {
       template: './src/assets/templates/index.html',
       inject: true,
     }),
+    new webpack.HotModuleReplacementPlugin(),
+
   ],
   devServer: {
     contentBase: path.join(process.cwd(), 'dist'),
     compress: true,
     port: 9000,
+    hot: true,
   },
 };
